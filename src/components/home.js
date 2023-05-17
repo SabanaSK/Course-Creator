@@ -1,4 +1,6 @@
 import { FlatList, Text, TouchableOpacity, View } from 'react-native';
+import { useState } from 'react';
+
 import styles from '../styles/styles';
 
 

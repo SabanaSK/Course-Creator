@@ -7,10 +7,12 @@ import { useState } from 'react';
 import Home from './src/components/home';
 import CourseDetails from './src/components/courseDetails';
 import CreateCourse from './src/components/createCourse';
+import Filter from './src/components/filter';
 
 const Stack = createNativeStackNavigator();
 
 const App = () => {
+ const [filter, setFilter] = useState(null)
  const [data, setData] = useState([
         {
             title: 'Character Design :Reincarnated as a slime',
@@ -62,17 +64,21 @@ const App = () => {
                     children={(props) => <Home {...props} data={data} />}
                     options={({ navigation}) => ({
                         title: 'All Course',
-                        headerRight: () => (
+                        headerLeft: () => (
                         <Button
                             title='Create Course'
                             onPress={() => navigation.navigate('Create Course')}
                             />
-                        ),
+                        ),headerRight: () => (
+                        <Button
+                            title='Filter' onPress={() => navigation.navigate('Filter')}/>
+                        )
                     })}
                 />
                 <Stack.Screen name='View Details' component={CourseDetails} />
                 <Stack.Screen name='Create Course' children={(props) => <CreateCourse {...props} onAddCourse={addCourse}
                  />} />
+                  <Stack.Screen name='Filter' children={(props) => <Filter {...props} onApplyFilter={setFilter}/>} />
             </Stack.Navigator>
         </NavigationContainer>
     );

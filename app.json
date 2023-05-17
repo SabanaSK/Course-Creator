@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "reviews-app",
-    "slug": "reviews-app",
+    "name": "course-creator-app",
+    "slug": "course-creator-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
