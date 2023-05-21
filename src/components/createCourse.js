@@ -8,9 +8,10 @@ const CreateCourse = ({ navigation, onAddCourse }) => {
   const [title, setTitle] = useState('');
   const [rating, setRating] = useState('');
   const [body, setBody] = useState('');
+  const [author, setAuthor] = useState('');
 
   const createCourse = () => {
-    onAddCourse({ title, rating, body });
+    onAddCourse({ title, rating, body, author });
     navigation.goBack();
   };
 
@@ -34,7 +35,12 @@ const CreateCourse = ({ navigation, onAddCourse }) => {
         value={rating}
         onChangeText={setRating}
       />
-
+  <TextInput
+        style={createStyles.input}
+        placeholder='Author'
+        value={author}
+        onChangeText={setAuthor}
+      />
       <Button title='Create Course' onPress={createCourse} />
     </View>
   );

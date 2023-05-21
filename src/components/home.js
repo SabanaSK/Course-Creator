@@ -13,10 +13,11 @@ const Home = ({ navigation, data }) => {
                 renderItem={({ item }) => (
                     <TouchableOpacity
                         onPress={() =>
-                            navigation.navigate('View Details', { item })
+                            navigation.navigate('Course Detail', { item })
                         }
                     >
                         <Text style={styles.titleText}>{item.title}</Text>
+                        <Text style={styles.paragraph}>{item.author}</Text>
                     </TouchableOpacity>
                 )}
             ></FlatList>

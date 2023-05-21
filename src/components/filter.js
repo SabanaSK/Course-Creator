@@ -6,9 +6,10 @@ const Filter = ({ navigation, onApplyFilter }) => {
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
   const [rating, setRating] = useState('');
+ const [author, setAuthor] = useState('');
 
   const applyFilter = () => {
-    onApplyFilter({ title, body, rating });
+    onApplyFilter({ title, body, rating, author });
     navigation.goBack();
   };
 
@@ -26,6 +27,12 @@ const Filter = ({ navigation, onApplyFilter }) => {
                    labelPosition={LABEL_POSITION.RIGHT}
                    label='Body'
                 />
+                <CircleCheckBox
+                                 checked={author}
+                                  onToggle={setAuthor}
+                                  labelPosition={LABEL_POSITION.RIGHT}
+                                  label='Author'
+                               />
       <CircleCheckBox
                  checked={rating}
                   onToggle={setRating}
