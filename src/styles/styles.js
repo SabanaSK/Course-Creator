@@ -21,6 +21,12 @@ const styles = StyleSheet.create({
             alignItems: 'center',
             justifyContent: 'center',
         },
+        header: {
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+        },
+
 });
 
 export default styles;
