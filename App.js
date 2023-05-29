@@ -1,5 +1,5 @@
 import * as SplashScreen from 'expo-splash-screen';
-import { View, Button} from 'react-native';
+import { View, TouchableOpacity, Text} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useState } from 'react';
@@ -41,6 +41,7 @@ const App = () => {
                         elevation:5,
                     },
                     headerTintColor: 'black',
+                    headerTitleAlign: 'center',
                 }}
             >
                 <Stack.Screen
@@ -49,13 +50,19 @@ const App = () => {
                     options={({ navigation}) => ({
                         title: 'All Course',
                         headerLeft: () => (
-                        <Button
-                            title='Create Course'
-                            onPress={() => navigation.navigate('Create Course')}
-                            />
+                       <TouchableOpacity
+                                      style={{ backgroundColor: '#FFFFFF', padding: 10, borderRadius: 5 }}
+                                      onPress={() => navigation.navigate('Create Course')}
+                                  >
+                                      <Text style={{ color: '#000' }}>Create Course</Text>
+                                  </TouchableOpacity>
                         ),headerRight: () => (
-                        <Button
-                            title='Filter' onPress={() => navigation.navigate('Filter')}/>
+                        <TouchableOpacity
+                                       style={{ backgroundColor: '#FFFFFF', padding: 10, borderRadius: 5 }}
+                                       onPress={() => navigation.navigate('Filter')}
+                                   >
+                                       <Text style={{ color: '#000' }}>Filter</Text>
+                                   </TouchableOpacity>
                         )
                     })}
                 />
