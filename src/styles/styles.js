@@ -28,13 +28,18 @@ const styles = StyleSheet.create({
           alignItems: 'center',
         },
         image: {
-            width: 100,
-            height: 100,
+            width: 250,
+            height: 250,
             resizeMode: 'contain',
+            borderRadius: 10,
         },
         courseContainer: {
           flexDirection: 'column',
           alignItems: 'center',
+          backgroundColor: '#ffff',
+          borderRadius: 10,
+          marginBottom: 40,
+          paddingVertical: 20,
         },
 
 

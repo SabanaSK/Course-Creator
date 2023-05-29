@@ -30,12 +30,12 @@ export const courses = [
             ]
         },
         {
-          title: 'Digital art: Environment drawing',
+          title: 'Tutorial: Design logo',
           rating: 2,
           h2: 'Basic learning of how  to use procreate',
           h3: 'Course Content',
           body: 'How to use brush, how to use app, how to adjust brush, canvas size',
-          author: 'Anna',
+          author: 'Gassie',
           image: require('../assets/logo.png'),
           key: '2',
           moments: [
@@ -55,7 +55,7 @@ export const courses = [
           h2: 'Basic learning of how  to use procreate',
           h3: 'Course Content',
           body: 'How to use brush, how to use app, how to adjust brush, canvas size',
-          author: 'Anna',
+          author: 'Maxie',
           image: require('../assets/draw.png'),
           key: '3',
           moments: [
@@ -70,12 +70,12 @@ export const courses = [
                                ]
                },
         {
-          title: 'Tutorial: How to use Procreate',
+          title: 'Digital art: Character and Environment',
           rating: 2,
           h2: 'Basic learning of how  to use procreate',
           h3: 'Course Content',
           body: 'How to use brush, how to use app, how to adjust brush, canvas size',
-          author: 'Anna',
+          author: 'Ariel',
           image: require('../assets/baby.png'),
           key: '4',
           moments: [
@@ -90,12 +90,13 @@ export const courses = [
                            ]
                        },
         {
-          title: 'Tutorial: How to use Procreate',
+          title: 'Tutorial: Create art for Portfolio',
           rating: 2,
           h2: 'Basic learning of how  to use procreate',
           h3: 'Course Content',
           body: 'How to use brush, how to use app, how to adjust brush, canvas size',
-          author: 'Anna',
+          author: 'Sabana',
+          image: require('../assets/racket.png'),
           key: '5',
           moments: [
                      { id: '1', title: 'Creator and Class introduction', details: 'Details number one, details number' },
