@@ -4,11 +4,11 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useState } from 'react';
 
-import Home from './src/components/home';
-import CourseDetails from './src/components/courseDetails';
-import CreateCourse from './src/components/createCourse';
-import Filter from './src/components/filter';
-import CourseMoments from './src/components/courseMoments'
+import Home from './src/screens/Home';
+import CourseDetails from './src/screens/CourseDetails';
+import CreateCourse from './src/screens/CreateCourse';
+import Filter from './src/screens/Filter';
+import CourseMoments from './src/screens/CourseMoments'
 import { courses } from './src/data';
 
 

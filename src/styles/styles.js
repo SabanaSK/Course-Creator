@@ -7,7 +7,8 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     titleText: {
-        fontSize: 18,
+        fontSize: 19,
+        marginTop: 16,
     },
     paragraph: {
         marginVertical: 8,
