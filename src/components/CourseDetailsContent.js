@@ -7,23 +7,34 @@ import { useNavigation, useRoute } from '@react-navigation/native';
 
 import styles from '../styles/styles';
 
-const CourseDetailsContent = ({ onSwipeRight } ) => {
+const CourseDetailsContent = ({ onSwipeLeft, onSwipeRight } ) => {
     const navigation = useNavigation();
     const route = useRoute();
     const { item } = route.params;
-    const scrollRef = useRef();
     const [isCollapsed, setIsCollapsed] = useState(true);
+const swipeRef = useRef();
 
+const handleSwipeRight = () => {
+    navigation.openDrawer();
+  };
+
+  const handleSwipeLeft = () => {
+    navigation.navigate('Course Moments', {moments: item.moments});
+  };
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <FlingGestureHandler
-        direction={Directions.RIGHT}
-        onHandlerStateChange={({ nativeEvent }) => {
-          if (nativeEvent.state === 5) {
-            onSwipeRight();
-          }
-        }}
-      >
+        ref={swipeRef}
+               direction={Directions.RIGHT | Directions.LEFT}
+               onHandlerStateChange={({ nativeEvent }) => {
+                 if (nativeEvent.state === 5) {
+                   handleSwipeRight();
+                 } else if (
+                 nativeEvent.state === 4) {
+                   handleSwipeRight();
+                 }
+               }}
+             >
         <View style={style.container}>
           <FlatList
             data={[item]}

@@ -1,8 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 import { WebView } from 'react-native-webview';
 
-const MomentItem = ({ item, isSelected, isVideoPlaying, handlePress, handleLongPress }) => (
+const MomentItem = ({ item }) => {
+    const [selectedMomentId, setSelectedMomentId] = useState(null);
+      const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+      const isSelected = selectedMomentId === item.id;
+
+      const handlePress = (id) => {
+        setSelectedMomentId(id);
+        setIsVideoPlaying(false);
+      };
+
+      const handleLongPress = (id) => {
+        setSelectedMomentId(id);
+        setIsVideoPlaying(true);
+      };
+
+  return (
   <TouchableOpacity
     onPress={() => handlePress(item.id)}
     onLongPress={() => handleLongPress(item.id)}
@@ -27,7 +42,8 @@ const MomentItem = ({ item, isSelected, isVideoPlaying, handlePress, handleLongP
       />
     )}
   </TouchableOpacity>
-);
+  );
+};
 
 const styles = StyleSheet.create({
   cardContainer: {
