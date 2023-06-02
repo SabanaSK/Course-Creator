@@ -1,14 +1,13 @@
-import React from 'react';
 import CourseDetailsContent from '../components/CourseDetailsContent';
 
-const CourseDetailsScreen = ({ route, navigation }) => {
-  const { item } = route.params;
-
-  const onSwipeRight = () => {
-    navigation.navigate('Course Moments', { moments: item.moments });
+const CourseDetails = ({ route, navigation }) => {
+ const { item } = route.params;
+ const onSwipeRight = () => {
+    navigation.openDrawer();
   };
 
-  return <CourseDetailsContent item={item} onSwipeRight={onSwipeRight} />;
-};
+   return <CourseDetailsContent item={item} onSwipeRight={onSwipeRight} />;
+ };
 
-export default CourseDetailsScreen;
+
+export default CourseDetails;

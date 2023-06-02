@@ -5,6 +5,7 @@ const styles = StyleSheet.create({
         flex: 1,
         padding: 20,
         alignItems: 'center',
+          paddingTop: 0,
     },
     titleText: {
         fontSize: 19,
@@ -42,7 +43,6 @@ const styles = StyleSheet.create({
           marginBottom: 40,
           paddingVertical: 20,
         },
-
 
 });
 

@@ -3,7 +3,7 @@ import { View, Text, FlatList, StyleSheet } from 'react-native';
 import MomentItem from '../components/MomentItem';
 
 const CourseMoments = ({ route }) => {
-  const { moments } = route.params;
+  const { item } = route.params;
   const [selectedMomentId, setSelectedMomentId] = useState(null);
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 

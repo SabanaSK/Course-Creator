@@ -1,12 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Text, View, TouchableOpacity, StyleSheet, FlatList, Image } from 'react-native';
 import Collapsible from 'react-native-collapsible';
 import { Directions, FlingGestureHandler, GestureHandlerRootView } from 'react-native-gesture-handler';
 import Icon from 'react-native-vector-icons/Ionicons';
+import { useNavigation, useRoute } from '@react-navigation/native';
+
 import styles from '../styles/styles';
 
-const CourseDetailsContent = ({ item, onSwipeRight }) => {
-  const [isCollapsed, setIsCollapsed] = useState(true);
+const CourseDetailsContent = ({ onSwipeRight } ) => {
+    const navigation = useNavigation();
+    const route = useRoute();
+    const { item } = route.params;
+    const scrollRef = useRef();
+    const [isCollapsed, setIsCollapsed] = useState(true);
 
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>

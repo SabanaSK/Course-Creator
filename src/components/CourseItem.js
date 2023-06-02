@@ -1,10 +1,17 @@
 import React from 'react';
 import { Text, TouchableOpacity, View, Image } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 import styles from '../styles/styles';
 
-const CourseItem = ({ navigation, item, data }) => {
+const CourseItem = ({ item }) => {
+        const navigation = useNavigation();
+
   return (
-    <TouchableOpacity onPress={() => navigation.navigate('Course Detail', { item, data })}>
+ <TouchableOpacity onPress={() => navigation.navigate('Drawer', {
+     screen: 'Course Details',
+     params: { item },
+ })}
+ >
       <View style={styles.courseContainer}>
         <Image source={item.image} style={styles.image} />
         <Text style={styles.titleText}>{item.title}</Text>
