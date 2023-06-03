@@ -6,7 +6,7 @@ import { useState } from 'react';
 import Home from './src/screens/Home';
 import CreateCourse from './src/screens/CreateCourse';
 import Filter from './src/screens/Filter';
-import { courses } from './src/data';
+import { courses } from './data/data';
 import {CourseDetailsDrawer} from './routes/drawerNavigation';
 
 const Stack = createNativeStackNavigator();

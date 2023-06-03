@@ -1,44 +1,38 @@
 import { useState } from 'react';
-import { Button, TextInput, View } from 'react-native';
+import { Button, View, Text } from 'react-native';
 import CircleCheckBox, {LABEL_POSITION} from 'react-native-circle-checkbox';
 
-const Filter = ({ navigation, onApplyFilter }) => {
-  const [title, setTitle] = useState('');
-  const [body, setBody] = useState('');
-  const [rating, setRating] = useState('');
- const [author, setAuthor] = useState('');
+import { courses } from '../../data/data';
+import filterList from '../../data/filterList';
+import RadioButton from '../components/RadioButton';
+
+const Filter = ({ navigation }) => {
+   const [data, setData] = useState(courses);
+    const [filterType, setFilterType] = useState(filterList)
+    const [selectedOption, setSelectedOption] = useState(filterType[0]); // Set the initial selected option
+
+const handleSelectionChange = (option) => {
+    setSelectedOption(option);
+  };
 
   const applyFilter = () => {
-    onApplyFilter({ title, body, rating, author });
-    navigation.goBack();
+    const filteredData = data.filter(item => {
+      return item.type === selectedOption;
+    });
+    navigation.navigate('Home', { data: filteredData });
   };
+
 
   return (
     <View>
-      <CircleCheckBox
-            checked={title}
-             onToggle={setTitle}
-             labelPosition={LABEL_POSITION.RIGHT}
-             label='Title'
-          />
-      <CircleCheckBox
-                  checked={body}
-                   onToggle={setBody}
-                   labelPosition={LABEL_POSITION.RIGHT}
-                   label='Body'
-                />
-                <CircleCheckBox
-                                 checked={author}
-                                  onToggle={setAuthor}
-                                  labelPosition={LABEL_POSITION.RIGHT}
-                                  label='Author'
-                               />
-      <CircleCheckBox
-                 checked={rating}
-                  onToggle={setRating}
-                  labelPosition={LABEL_POSITION.RIGHT}
-                  label='Rating'
-               />
+      {filterType.map((type, index) => (
+        <RadioButton
+          option={type}
+          selectedOption={selectedOption}
+          onSelectionChange={handleSelectionChange}
+        />
+      ))}
+
       <Button title='Apply Filter' onPress={applyFilter} />
     </View>
   );

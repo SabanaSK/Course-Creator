@@ -1,6 +1,7 @@
 export const courses = [
         {
             title: 'Tutorial: How to use Procreate',
+            type: 'Tutorial',
             h2: 'Course Content',
             contents: [
             {content: 'Introduction to and installing Procreate' },
@@ -23,61 +24,62 @@ export const courses = [
                  {detail: 'Canvas'},
                  {detail: 'Brush'},
                  ],
-                 videoUrl: 'https://www.youtube.com/watch?v=AWmWWTBBxv4'
+                 videoUrl: 'oo8_NODWjbw'
                   },
                 {
                 id: '2',
                 title: 'Introduction to work environment',
                 h1: 'This video shows:',
                 details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                videoUrl: 'oo8_NODWjbw'
                 },
                 {
                 id: '3',
                 title: 'Installing Procreate',
                 h1: 'This video shows:',
                 details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                videoUrl: 'oo8_NODWjbw'
                 },
                 {
                 id: '4',
                 title: 'All procreate function',
                 h1: 'This video shows:',
                 details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                videoUrl: 'oo8_NODWjbw'
                 },
                 {
                 id: '5',
                 title: 'Canvas',
                 h1: 'This video shows:',
                 details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                videoUrl: 'oo8_NODWjbw'
                 },
                 {
                 id: '6',
                 title: 'Brush',
                 h1: 'This video shows:',
                 details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                videoUrl: 'oo8_NODWjbw'
                 },
                 {
                 id: '7',
                 title: 'Animation',
                 h1: 'This video shows:',
                 details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                videoUrl: 'oo8_NODWjbw'
                 },
                 {
                 id: '8',
                 title: '3D Model',
                 h1: 'This video shows:',
                 details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                videoUrl: 'oo8_NODWjbw'
                 },
             ]
         },
         {
           title: 'Tutorial: Design logo',
+            type: 'Tutorial',
            h2: 'Course Content',
                      contents: [
                      {content: 'Introduction to and installing Procreate' },
@@ -107,53 +109,55 @@ export const courses = [
                           title: 'Introduction to work environment',
                           h1: 'This video shows:',
                           details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                          videoUrl: 'oo8_NODWjbw'
                           },
                           {
                           id: '3',
                           title: 'Installing Procreate',
                           h1: 'This video shows:',
                           details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                          videoUrl: 'oo8_NODWjbw'
                           },
                           {
                           id: '4',
                           title: 'All procreate function',
                           h1: 'This video shows:',
                           details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                          videoUrl: 'oo8_NODWjbw'
                           },
                           {
                           id: '5',
                           title: 'Canvas',
                           h1: 'This video shows:',
                           details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                          videoUrl: 'oo8_NODWjbw'
                           },
                           {
                           id: '6',
                           title: 'Brush',
                           h1: 'This video shows:',
                           details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                          videoUrl: 'oo8_NODWjbw'
                           },
                           {
                           id: '7',
                           title: 'Animation',
                           h1: 'This video shows:',
                           details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                          videoUrl: 'oo8_NODWjbw'
                           },
                           {
                           id: '8',
                           title: '3D Model',
                           h1: 'This video shows:',
                           details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                          videoUrl: 'oo8_NODWjbw'
                           },
                       ]
                },
         {
+            title: 'Step by Step: Draw',
+            type: 'Step by Step',
             h2: 'Course Content',
                       contents: [
                       {content: 'Introduction to and installing Procreate' },
@@ -183,54 +187,55 @@ export const courses = [
                           title: 'Introduction to work environment',
                           h1: 'This video shows:',
                           details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                          videoUrl: 'oo8_NODWjbw'
                           },
                           {
                           id: '3',
                           title: 'Installing Procreate',
                           h1: 'This video shows:',
                           details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                          videoUrl: 'oo8_NODWjbw'
                           },
                           {
                           id: '4',
                           title: 'All procreate function',
                           h1: 'This video shows:',
                           details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                          videoUrl: 'oo8_NODWjbw'
                           },
                           {
                           id: '5',
                           title: 'Canvas',
                           h1: 'This video shows:',
                           details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                          videoUrl: 'oo8_NODWjbw'
                           },
                           {
                           id: '6',
                           title: 'Brush',
                           h1: 'This video shows:',
                           details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                          videoUrl: 'oo8_NODWjbw'
                           },
                           {
                           id: '7',
                           title: 'Animation',
                           h1: 'This video shows:',
                           details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                          videoUrl: 'oo8_NODWjbw'
                           },
                           {
                           id: '8',
                           title: '3D Model',
                           h1: 'This video shows:',
                           details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                          videoUrl: 'oo8_NODWjbw'
                           },
                       ]
                },
         {
           title: 'Digital art: Character and Environment',
+            type: 'Digital art',
            h2: 'Course Content',
                      contents: [
                      {content: 'Introduction to and installing Procreate' },
@@ -260,54 +265,55 @@ export const courses = [
                           title: 'Introduction to work environment',
                           h1: 'This video shows:',
                           details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                          videoUrl: 'oo8_NODWjbw'
                           },
                           {
                           id: '3',
                           title: 'Installing Procreate',
                           h1: 'This video shows:',
                           details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                          videoUrl: 'oo8_NODWjbw'
                           },
                           {
                           id: '4',
                           title: 'All procreate function',
                           h1: 'This video shows:',
                           details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                          videoUrl: 'oo8_NODWjbw'
                           },
                           {
                           id: '5',
                           title: 'Canvas',
                           h1: 'This video shows:',
                           details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                          videoUrl: 'oo8_NODWjbw'
                           },
                           {
                           id: '6',
                           title: 'Brush',
                           h1: 'This video shows:',
                           details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                          videoUrl: 'oo8_NODWjbw'
                           },
                           {
                           id: '7',
                           title: 'Animation',
                           h1: 'This video shows:',
                           details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                          videoUrl: 'oo8_NODWjbw'
                           },
                           {
                           id: '8',
                           title: '3D Model',
                           h1: 'This video shows:',
                           details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                          videoUrl: 'oo8_NODWjbw'
                           },
                       ]
                        },
         {
           title: 'Tutorial: Create Portfolio-Ready logo',
+            type: 'Tutorial',
          h2: 'Course Content',
                    contents: [
                    {content: 'Introduction to and installing Procreate' },
@@ -337,49 +343,49 @@ export const courses = [
                           title: 'Introduction to work environment',
                           h1: 'This video shows:',
                           details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                          videoUrl: 'oo8_NODWjbw'
                           },
                           {
                           id: '3',
                           title: 'Installing Procreate',
                           h1: 'This video shows:',
                           details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                          videoUrl: 'oo8_NODWjbw'
                           },
                           {
                           id: '4',
                           title: 'All procreate function',
                           h1: 'This video shows:',
                           details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                          videoUrl: 'oo8_NODWjbw'
                           },
                           {
                           id: '5',
                           title: 'Canvas',
                           h1: 'This video shows:',
                           details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                          videoUrl: 'oo8_NODWjbw'
                           },
                           {
                           id: '6',
                           title: 'Brush',
                           h1: 'This video shows:',
                           details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                          videoUrl: 'oo8_NODWjbw'
                           },
                           {
                           id: '7',
                           title: 'Animation',
                           h1: 'This video shows:',
                           details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                          videoUrl: 'oo8_NODWjbw'
                           },
                           {
                           id: '8',
                           title: '3D Model',
                           h1: 'This video shows:',
                           details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'
+                          videoUrl: 'oo8_NODWjbw'
                           },
                       ]
                                },
