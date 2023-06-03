@@ -8,6 +8,7 @@ import CreateCourse from './src/screens/CreateCourse';
 import Filter from './src/screens/Filter';
 import { courses } from './data/data';
 import {CourseDetailsDrawer} from './routes/drawerNavigation';
+import { FilterProvider } from './src/FilterContext';
 
 const Stack = createNativeStackNavigator();
 
@@ -24,6 +25,7 @@ const App = () => {
 
     return (
     <NavigationContainer>
+        <FilterProvider>
           <Stack.Navigator
             initialRouteName="Home"
             screenOptions={screenOptions}
@@ -64,6 +66,7 @@ const App = () => {
               children={(props) => <Filter {...props} onApplyFilter={setFilter} />}
             />
           </Stack.Navigator>
+        </FilterProvider>
         </NavigationContainer>
       );
     };

@@ -1,15 +1,17 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { Button, View, Text } from 'react-native';
 import CircleCheckBox, {LABEL_POSITION} from 'react-native-circle-checkbox';
 
 import { courses } from '../../data/data';
 import filterList from '../../data/filterList';
 import RadioButton from '../components/RadioButton';
+import { FilterContext } from '../FilterContext';
 
 const Filter = ({ navigation }) => {
    const [data, setData] = useState(courses);
     const [filterType, setFilterType] = useState(filterList)
     const [selectedOption, setSelectedOption] = useState(filterType[0]); // Set the initial selected option
+    const { setFilteredData } = useContext(FilterContext);
 
 const handleSelectionChange = (option) => {
     setSelectedOption(option);
@@ -19,7 +21,8 @@ const handleSelectionChange = (option) => {
     const filteredData = data.filter(item => {
       return item.type === selectedOption;
     });
-    navigation.navigate('Home', { data: filteredData });
+    setFilteredData(filteredData);
+    navigation.goBack();
   };
 
 
