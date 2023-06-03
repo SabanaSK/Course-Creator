@@ -43,6 +43,12 @@ const styles = StyleSheet.create({
           marginBottom: 40,
           paddingVertical: 20,
         },
+         listContainer: {
+            flex: 1,
+          },
+          listContent: {
+            flexGrow: 1,
+          },
 
 });
 

@@ -1,7 +1,7 @@
 import { useLayoutEffect } from 'react';
 import { useNavigation, useRoute} from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import { Dimensions, View } from 'react-native';
+import { Dimensions, View, ScrollView } from 'react-native';
 
 import CourseDetails from '../src/screens/CourseDetails';
 import MomentItem from '../src/components/MomentItem';
@@ -11,13 +11,11 @@ const Drawer = createDrawerNavigator();
 const DrawerItems = ({ item }) => {
     return (
         <View>
+        <ScrollView>
             {item.moments.map((i) => (
-                <MomentItem item={i}
-                                        isSelected={false}
-                                        isVideoPlaying={false}
-                                        handlePress={null}
-                                        handleLongPress={null} key={i.id} />
+                <MomentItem item={i} key={i.id} />
             ))}
+        </ScrollView>
         </View>
     );
 };

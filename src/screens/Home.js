@@ -10,10 +10,12 @@ const Home = ({ data }) => {
   return (
   <View style={styles.container} >
   <WelcomeCard />
-    <View >
+    <View style={styles.listContainer}>
       <FlatList
         data={data}
         renderItem={({ item }) => <CourseItem item={item} />}
+         contentContainerStyle={styles.listContent}
+
       />
     </View>
     </View>

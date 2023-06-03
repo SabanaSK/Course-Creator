@@ -26,6 +26,7 @@ const MomentItem = ({ item }) => {
       isSelected && styles.selectedCard,
     ]}
   >
+
     <Text style={styles.title}>{item.title}</Text>
     {isSelected && !isVideoPlaying && (
       <>

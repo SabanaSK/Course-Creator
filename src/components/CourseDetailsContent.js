@@ -1,13 +1,14 @@
 import React, { useState, useRef } from 'react';
-import { Text, View, TouchableOpacity, StyleSheet, FlatList, Image } from 'react-native';
+import { Text, View, TouchableOpacity, StyleSheet, ScrollView, Image } from 'react-native';
 import Collapsible from 'react-native-collapsible';
 import { Directions, FlingGestureHandler, GestureHandlerRootView } from 'react-native-gesture-handler';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { useNavigation, useRoute } from '@react-navigation/native';
 
+import ContentDetails from './ContentDetails';
 import styles from '../styles/styles';
 
-const CourseDetailsContent = ({ onSwipeLeft, onSwipeRight } ) => {
+const CourseDetailsContent = ({ onSwipeRight } ) => {
     const navigation = useNavigation();
     const route = useRoute();
     const { item } = route.params;
@@ -18,37 +19,29 @@ const handleSwipeRight = () => {
     navigation.openDrawer();
   };
 
-  const handleSwipeLeft = () => {
-    navigation.navigate('Course Moments', {moments: item.moments});
-  };
+
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <FlingGestureHandler
         ref={swipeRef}
-               direction={Directions.RIGHT | Directions.LEFT}
+               direction={Directions.RIGHT}
                onHandlerStateChange={({ nativeEvent }) => {
                  if (nativeEvent.state === 5) {
-                   handleSwipeRight();
-                 } else if (
-                 nativeEvent.state === 4) {
                    handleSwipeRight();
                  }
                }}
              >
+         <ScrollView>
         <View style={style.container}>
-          <FlatList
-            data={[item]}
-            keyExtractor={(item) => item.key}
-            renderItem={({ item }) => (
-              <>
+
                 <Image source={item.image} style={style.image} />
                 <Text style={style.titleText}>{item.title}</Text>
+
                 <Text style={style.h2}>{item.h2}</Text>
-                {item.contents.map((contentObj, index) => (
-                  <Text key={index} style={style.content}>
-                    {contentObj.content}
-                  </Text>
-                ))}
+{item.contents.map((contentObj, index) => (
+  <ContentDetails key={index} contentObj={contentObj} />
+))}
+
                 <TouchableOpacity
                   onPress={() => setIsCollapsed(!isCollapsed)}
                   style={styles.header}
@@ -62,10 +55,9 @@ const handleSwipeRight = () => {
                 <Collapsible collapsed={isCollapsed}>
                   <Text style={style.paragraph}>{item.body}</Text>
                 </Collapsible>
-              </>
-            )}
-          />
+
         </View>
+        </ScrollView>
       </FlingGestureHandler>
     </GestureHandlerRootView>
   );
