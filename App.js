@@ -8,7 +8,7 @@ import CreateCourse from './src/screens/CreateCourse';
 import Filter from './src/screens/Filter';
 import { courses } from './data/data';
 import {CourseDetailsDrawer} from './routes/drawerNavigation';
-import { FilterProvider } from './src/FilterContext';
+import { FilterProvider } from './src/context/FilterContext';
 
 const Stack = createNativeStackNavigator();
 

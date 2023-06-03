@@ -5,7 +5,7 @@ import CircleCheckBox, {LABEL_POSITION} from 'react-native-circle-checkbox';
 import { courses } from '../../data/data';
 import filterList from '../../data/filterList';
 import RadioButton from '../components/RadioButton';
-import { FilterContext } from '../FilterContext';
+import { FilterContext } from '../context/FilterContext';
 
 const Filter = ({ navigation }) => {
    const [data, setData] = useState(courses);

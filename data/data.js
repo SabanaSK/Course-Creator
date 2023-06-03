@@ -28,53 +28,24 @@ export const courses = [
                   },
                 {
                 id: '2',
-                title: 'Introduction to work environment',
+                title: '100 tips for Procreate',
                 h1: 'This video shows:',
-                details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                videoUrl: 'oo8_NODWjbw'
+                details: [
+                { detail: 'Straight line' },
+                { detail: 'Perfect shape' },
+                { detail: 'Undo' },
+                { detail: 'Multiple undo' },],
+                videoUrl: 'AkBfjP02sx0'
                 },
                 {
                 id: '3',
-                title: 'Installing Procreate',
+                title: 'Beginner Series',
                 h1: 'This video shows:',
-                details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                videoUrl: 'oo8_NODWjbw'
-                },
-                {
-                id: '4',
-                title: 'All procreate function',
-                h1: 'This video shows:',
-                details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                videoUrl: 'oo8_NODWjbw'
-                },
-                {
-                id: '5',
-                title: 'Canvas',
-                h1: 'This video shows:',
-                details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                videoUrl: 'oo8_NODWjbw'
-                },
-                {
-                id: '6',
-                title: 'Brush',
-                h1: 'This video shows:',
-                details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                videoUrl: 'oo8_NODWjbw'
-                },
-                {
-                id: '7',
-                title: 'Animation',
-                h1: 'This video shows:',
-                details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                videoUrl: 'oo8_NODWjbw'
-                },
-                {
-                id: '8',
-                title: '3D Model',
-                h1: 'This video shows:',
-                details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                videoUrl: 'oo8_NODWjbw'
-                },
+                details: [{ detail: 'Introduction' },
+                { detail: 'Painting Tools' },
+                { detail: 'Color' },],
+                videoUrl: 'Vn8bj0YpZg4'
+                }
             ]
         },
         {

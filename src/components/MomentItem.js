@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { TouchableOpacity, Text, StyleSheet, View, Pressable, Modal, } from 'react-native';
 import YoutubePlayer from 'react-native-youtube-iframe';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
 const MomentItem = ({ item }) => {
     const [selectedMomentId, setSelectedMomentId] = useState(null);
@@ -54,7 +55,7 @@ const handlePress = (id) => {
                         onPress={() => setModalVisible(false)}
                         style={styles.cancelButton}
                     >
-                        <Text style={styles.buttonText}>
+                        <Text style={styles.textButton}>
                             {isUnlocked ? 'DONE' : 'CANCEL'}
                         </Text>
                     </Pressable>
@@ -73,7 +74,10 @@ const handlePress = (id) => {
                 <>
                     <Text style={styles.h1}>{item.h1}</Text>
                     {item.details.map((detailObj, index) => (
+                    <View style={styles.iconContent}>
+                        <Icon name="check" size={24} color="#FF00DC" />
                         <Text key={index} style={styles.details}>{detailObj.detail}</Text>
+                        </View>
                     ))}
                 </>
             )}
@@ -113,12 +117,31 @@ const styles = StyleSheet.create({
     details: {
         fontSize: 16,
         marginBottom: 8,
+        marginLeft: 8,
     },
     header: {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
     },
+    iconContent: {
+       flexDirection: 'row',
+       alignItems: 'center' ,
+       paddingTop: 10,
+       },
+        cancelButton: {
+                backgroundColor: '#FF00DC',
+               width: 150,
+               padding: 10,
+               alignItems: 'center',
+               alignSelf: 'center',
+                borderRadius: 10,
+           },
+           textButton: {
+               fontSize: 25,
+                fontWeight: 'bold',
+               color: 'white',
+           },
 });
 
 export default MomentItem;

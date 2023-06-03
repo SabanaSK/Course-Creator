@@ -5,7 +5,7 @@ import { useState, useContext } from 'react';
 import WelcomeCard from '../components/WelcomeCard';
 import CourseItem from '../components/CourseItem';
 import styles from '../styles/styles';
-import { FilterContext } from '../FilterContext';
+import { FilterContext } from '../context/FilterContext';
 
 const Home = ({ data }) => {
   const { filteredData } = useContext(FilterContext);
