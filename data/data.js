@@ -73,7 +73,7 @@ export const courses = [
                            {detail: 'Canvas'},
                            {detail: 'Brush'},
                            ],
-                           videoUrl: 'https://www.youtube.com/watch?v=AWmWWTBBxv4'
+                           videoUrl: 'oo8_NODWjbw'
                             },
                           {
                           id: '2',
@@ -81,49 +81,8 @@ export const courses = [
                           h1: 'This video shows:',
                           details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
                           videoUrl: 'oo8_NODWjbw'
-                          },
-                          {
-                          id: '3',
-                          title: 'Installing Procreate',
-                          h1: 'This video shows:',
-                          details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'oo8_NODWjbw'
-                          },
-                          {
-                          id: '4',
-                          title: 'All procreate function',
-                          h1: 'This video shows:',
-                          details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'oo8_NODWjbw'
-                          },
-                          {
-                          id: '5',
-                          title: 'Canvas',
-                          h1: 'This video shows:',
-                          details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'oo8_NODWjbw'
-                          },
-                          {
-                          id: '6',
-                          title: 'Brush',
-                          h1: 'This video shows:',
-                          details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'oo8_NODWjbw'
-                          },
-                          {
-                          id: '7',
-                          title: 'Animation',
-                          h1: 'This video shows:',
-                          details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'oo8_NODWjbw'
-                          },
-                          {
-                          id: '8',
-                          title: '3D Model',
-                          h1: 'This video shows:',
-                          details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'oo8_NODWjbw'
-                          },
+                          }
+
                       ]
                },
         {
@@ -151,57 +110,8 @@ export const courses = [
                            {detail: 'Canvas'},
                            {detail: 'Brush'},
                            ],
-                           videoUrl: 'https://www.youtube.com/watch?v=AWmWWTBBxv4'
-                            },
-                          {
-                          id: '2',
-                          title: 'Introduction to work environment',
-                          h1: 'This video shows:',
-                          details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'oo8_NODWjbw'
-                          },
-                          {
-                          id: '3',
-                          title: 'Installing Procreate',
-                          h1: 'This video shows:',
-                          details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'oo8_NODWjbw'
-                          },
-                          {
-                          id: '4',
-                          title: 'All procreate function',
-                          h1: 'This video shows:',
-                          details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'oo8_NODWjbw'
-                          },
-                          {
-                          id: '5',
-                          title: 'Canvas',
-                          h1: 'This video shows:',
-                          details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'oo8_NODWjbw'
-                          },
-                          {
-                          id: '6',
-                          title: 'Brush',
-                          h1: 'This video shows:',
-                          details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'oo8_NODWjbw'
-                          },
-                          {
-                          id: '7',
-                          title: 'Animation',
-                          h1: 'This video shows:',
-                          details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'oo8_NODWjbw'
-                          },
-                          {
-                          id: '8',
-                          title: '3D Model',
-                          h1: 'This video shows:',
-                          details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'oo8_NODWjbw'
-                          },
+                           videoUrl: 'oo8_NODWjbw'
+                            }
                       ]
                },
         {
@@ -229,7 +139,7 @@ export const courses = [
                            {detail: 'Canvas'},
                            {detail: 'Brush'},
                            ],
-                           videoUrl: 'https://www.youtube.com/watch?v=AWmWWTBBxv4'
+                           videoUrl: 'oo8_NODWjbw'
                             },
                           {
                           id: '2',
@@ -244,42 +154,7 @@ export const courses = [
                           h1: 'This video shows:',
                           details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
                           videoUrl: 'oo8_NODWjbw'
-                          },
-                          {
-                          id: '4',
-                          title: 'All procreate function',
-                          h1: 'This video shows:',
-                          details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'oo8_NODWjbw'
-                          },
-                          {
-                          id: '5',
-                          title: 'Canvas',
-                          h1: 'This video shows:',
-                          details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'oo8_NODWjbw'
-                          },
-                          {
-                          id: '6',
-                          title: 'Brush',
-                          h1: 'This video shows:',
-                          details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'oo8_NODWjbw'
-                          },
-                          {
-                          id: '7',
-                          title: 'Animation',
-                          h1: 'This video shows:',
-                          details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'oo8_NODWjbw'
-                          },
-                          {
-                          id: '8',
-                          title: '3D Model',
-                          h1: 'This video shows:',
-                          details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'oo8_NODWjbw'
-                          },
+                          }
                       ]
                        },
         {
@@ -298,66 +173,31 @@ export const courses = [
           key: '5',
            moments: [
                            {
-                           id: '1',
-                           title: 'Creator and Class introduction',
-                           h1: 'This video shows:',
-                           details: [
-                           {detail: 'Introduce to Author'},
-                           {detail: 'Installing Procreate'},
-                           {detail: 'Canvas'},
-                           {detail: 'Brush'},
-                           ],
-                           videoUrl: 'https://www.youtube.com/watch?v=AWmWWTBBxv4'
-                            },
-                          {
-                          id: '2',
-                          title: 'Introduction to work environment',
-                          h1: 'This video shows:',
-                          details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'oo8_NODWjbw'
-                          },
-                          {
-                          id: '3',
-                          title: 'Installing Procreate',
-                          h1: 'This video shows:',
-                          details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'oo8_NODWjbw'
-                          },
-                          {
-                          id: '4',
-                          title: 'All procreate function',
-                          h1: 'This video shows:',
-                          details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'oo8_NODWjbw'
-                          },
-                          {
-                          id: '5',
-                          title: 'Canvas',
-                          h1: 'This video shows:',
-                          details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'oo8_NODWjbw'
-                          },
-                          {
-                          id: '6',
-                          title: 'Brush',
-                          h1: 'This video shows:',
-                          details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'oo8_NODWjbw'
-                          },
-                          {
-                          id: '7',
-                          title: 'Animation',
-                          h1: 'This video shows:',
-                          details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'oo8_NODWjbw'
-                          },
-                          {
-                          id: '8',
-                          title: '3D Model',
-                          h1: 'This video shows:',
-                          details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
-                          videoUrl: 'oo8_NODWjbw'
-                          },
+                                                      id: '1',
+                                                      title: 'Creator and Class introduction',
+                                                      h1: 'This video shows:',
+                                                      details: [
+                                                      {detail: 'Introduce to Author'},
+                                                      {detail: 'Installing Procreate'},
+                                                      {detail: 'Canvas'},
+                                                      {detail: 'Brush'},
+                                                      ],
+                                                      videoUrl: 'oo8_NODWjbw'
+                                                       },
+                                                     {
+                                                     id: '2',
+                                                     title: 'Introduction to work environment',
+                                                     h1: 'This video shows:',
+                                                     details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
+                                                     videoUrl: 'oo8_NODWjbw'
+                                                     },
+                                                     {
+                                                     id: '3',
+                                                     title: 'Installing Procreate',
+                                                     h1: 'This video shows:',
+                                                     details: [{ detail: 'Details number one' }, { detail: 'details number two' }],
+                                                     videoUrl: 'oo8_NODWjbw'
+                                                     }
                       ]
                                },
     ];
