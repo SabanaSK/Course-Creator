@@ -13,7 +13,10 @@ const CourseItem = ({ item }) => {
  })}
  >
       <View style={styles.courseContainer}>
-        <Image source={item.image} style={styles.image} />
+        <Image
+          source={typeof item.image === 'string' ? { uri: item.image } : item.image}
+          style={styles.image}
+        />
         <Text style={styles.titleText}>{item.title}</Text>
         <Text style={styles.paragraph}>{item.author}</Text>
       </View>

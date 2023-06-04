@@ -5,8 +5,10 @@ import { courses } from '../../data/data';
 
 export const FilterProvider = ({ children }) => {
   const [filteredData, setFilteredData] = useState(courses);
+  const [originData, setOriginData] = useState(courses);
 
   const addCourse = (course) => {
+    setOriginData((prev) => [...prev, course]);
     setFilteredData((prev) => [...prev, course]);
   };
 
@@ -14,6 +16,7 @@ export const FilterProvider = ({ children }) => {
       filteredData,
       setFilteredData,
       addCourse,
+      originData
    };
 
   return (

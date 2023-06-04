@@ -34,7 +34,10 @@ const handleSwipeRight = () => {
          <ScrollView>
         <View style={style.container}>
 
-                <Image source={item.image} style={style.image} />
+                <Image
+                  source={typeof item.image === 'string' ? { uri: item.image } : item.image}
+                  style={styles.image}
+                />
                 <Text style={style.titleText}>{item.title}</Text>
 
                 <Text style={style.h2}>{item.h2}</Text>
