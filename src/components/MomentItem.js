@@ -35,7 +35,7 @@ const handlePress = (id) => {
     };
 
     return (
-        <Pressable // Replace TouchableOpacity with Pressable
+        <Pressable
             onPress={() => handlePress(item.id)}
             onLongPress={() => handleLongPress(item.id)}
             style={[
@@ -69,17 +69,16 @@ const handlePress = (id) => {
                     color="black"
                 />
             </View>
-
             {isSelected && !isVideoPlaying && (
-                <>
-                    <Text style={styles.h1}>{item.h1}</Text>
-                    {item.details.map((detailObj, index) => (
-                    <View style={styles.iconContent}>
-                        <Icon name="check" size={24} color="#FF00DC" />
-                        <Text key={index} style={styles.details}>{detailObj.detail}</Text>
-                        </View>
-                    ))}
-                </>
+              <>
+                <Text style={styles.h1}>{item.h1}</Text>
+                {item.details.map((detailObj, index) => (
+                  <View style={styles.iconContent} key={index}>
+                    <Icon name="check" size={24} color="#FF00DC" />
+                    <Text style={styles.details}>{detailObj.detail}</Text>
+                  </View>
+                ))}
+              </>
             )}
         </Pressable>
     );
@@ -88,8 +87,12 @@ const handlePress = (id) => {
 const styles = StyleSheet.create({
     cardContainer: {
         backgroundColor: '#FFFFFF',
+        width: '80%',
         padding: 16,
+        marginTop: 30,
         marginBottom: 20,
+        marginLeft: 'auto',
+        marginRight: 'auto',
         borderRadius: 8,
         paddingVertical: 20,
         shadowColor: '#000000',

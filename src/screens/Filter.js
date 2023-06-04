@@ -28,6 +28,7 @@ const handleSelectionChange = (option) => {
     <View>
       {filterType.map((type, index) => (
         <RadioButton
+            key={index}
           option={type}
           selectedOption={selectedOption}
           onSelectionChange={handleSelectionChange}
